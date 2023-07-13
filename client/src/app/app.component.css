@@ -1,0 +1,3 @@
+.interval-option {
+  @apply w-7 h-7 flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white;
+}

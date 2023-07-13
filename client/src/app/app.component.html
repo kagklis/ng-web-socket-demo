@@ -1,82 +1,60 @@
-<div
-  class="flex border items-center justify-center rounded-md w-96 sm:w-8/12 m-10 p-6 bg-gray-50"
->
-  <div class="flex flex-col min-w-full">
-    <div class="flex items-center mt-2 mb-4">
-      <p
-        class="flex-none font-semibold pt-1 pb-1 pr-1 me-1 border-r border-slate-300 h-full"
-      >
-        Interval
-      </p>
-      <div class="font-thin space-x-1 flex text-sm">
-        <label>
-          <input
-            class="sr-only peer"
-            name="interval"
-            type="radio"
-            (change)="updateInterval(1)"
-            [checked]="interval === 1"
-          />
-          <div
-            class="w-7 h-7 flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
-          >
-            1s
-          </div>
-        </label>
-        <label>
-          <input
-            class="sr-only peer"
-            name="interval"
-            type="radio"
-            (change)="updateInterval(5)"
-          />
-          <div
-            class="w-7 h-7 flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
-          >
-            5s
-          </div>
-        </label>
-        <label>
-          <input
-            class="sr-only peer"
-            name="interval"
-            type="radio"
-            (change)="updateInterval(10)"
-          />
-          <div
-            class="w-7 h-7 flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
-          >
-            10s
-          </div>
-        </label>
-        <label>
-          <input
-            class="sr-only peer"
-            name="interval"
-            type="radio"
-            (change)="updateInterval(30)"
-          />
-          <div
-            class="w-7 h-7 flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
-          >
-            30s
-          </div>
-        </label>
-        <label>
-          <input
-            class="sr-only peer"
-            name="interval"
-            type="radio"
-            (change)="updateInterval(60)"
-          />
-          <div
-            class="w-7 h-7 flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
-          >
-            1m
-          </div>
-        </label>
+<div class="flex h-full justify-center items-center">
+  <div class="flex border items-center justify-center rounded-md w-96 sm:w-8/12 m-10 p-6 bg-gray-50">
+    <div class="flex flex-col min-w-full">
+      <div class="flex items-center mt-2 mb-4">
+        <p class="flex-none h-full font-semibold pt-1 pb-1 pr-1 me-1 border-r border-slate-300">
+          Interval
+        </p>
+        <div class="font-thin space-x-1 flex text-sm">
+          <label>
+            <input
+              class="sr-only peer"
+              name="interval"
+              type="radio"
+              (change)="updateInterval(1)"
+              [checked]="interval === 1"
+            />
+            <div class="interval-option">1s</div>
+          </label>
+          <label>
+            <input
+              class="sr-only peer"
+              name="interval"
+              type="radio"
+              (change)="updateInterval(5)"
+            />
+            <div class="interval-option">5s</div>
+          </label>
+          <label>
+            <input
+              class="sr-only peer"
+              name="interval"
+              type="radio"
+              (change)="updateInterval(10)"
+            />
+            <div class="interval-option">10s</div>
+          </label>
+          <label>
+            <input
+              class="sr-only peer"
+              name="interval"
+              type="radio"
+              (change)="updateInterval(30)"
+            />
+            <div class="interval-option">30s</div>
+          </label>
+          <label>
+            <input
+              class="sr-only peer"
+              name="interval"
+              type="radio"
+              (change)="updateInterval(60)"
+            />
+            <div class="interval-option">1m</div>
+          </label>
+        </div>
       </div>
+      <canvas id="myChart"> </canvas>
     </div>
-    <canvas id="myChart"> </canvas>
   </div>
 </div>
